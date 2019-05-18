@@ -12,7 +12,7 @@ console.log("HAP-NodeJS starting...");
 storage.initSync();
 
 // Start by creating our Bridge which will host all loaded Accessories
-var bridge = new Bridge('Node Bridge', uuid.generate("Node Bridge"));
+var bridge = new Bridge('Meen Bridge', uuid.generate("Meen Bridge"));
 
 // Listen for bridge identification event
 bridge.on('identify', function(paired, callback) {
@@ -31,9 +31,9 @@ accessories.forEach(function(accessory) {
 
 // Publish the Bridge on the local network.
 bridge.publish({
-  username: "CC:22:3D:E3:CE:F6",
+  username: "6D:65:65:6E:35:33",
   port: 51826,
-  pincode: "031-45-154",
+  pincode: "080-29-477",
   category: Accessory.Categories.BRIDGE
 });
 
